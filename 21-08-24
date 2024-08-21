@@ -1,0 +1,83 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main() {
+    //var b; GIVES ERROR IF NOT INTIALIZED
+    var d: Integer;//will not give error and defaukt value will be given(0)
+    var a=10;
+    var A=100;
+    val const=3.14;
+    var s="prajjwal";
+    println(a+const);
+    println(s+const);
+    println("A="+A+" a is "+a);//ITS A TYPE SENSITIVE LANGUAGE
+     //println("Value of d="+d); WILL GIVE ERROR AS ITS NOT INTIALIZED
+    //println(s-const); GIVES ERROR
+    	
+    
+}
+
+fun greet()
+{
+    val message:String="Hello Kotlin!"
+   
+}
+ println(message);//This will give error as its declared out side the function
+
+
+
+
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+
+class Person
+{
+    var name: String ="John Doe"
+    val age: Int=30
+    fun displayInfo()
+    {
+        println("name:$name, Age:$age")
+    }
+}
+  fun main() {
+    val person=Person()
+    person.displayInfo()
+    }
+
+Type: byte
+Size (in bits): 8
+Range: -128 to 127
+
+Type: short
+Size (in bits): 16
+Range: -32,768 to 32,767
+
+Type: int
+Size (in bits): 32
+Range: -2^31 to 2^31 - 1
+
+Type: long
+Size (in bits): 64
+Range: -2^63 to 2^63 - 1
+
+Type: float
+Size (in bits): 32
+Range: 1.4e-45 to 3.4e+38
+
+Type: double
+Size (in bits): 64
+Range: 4.9e-324 to 1.8e+308
+
+Type: char
+Size (in bits): 16
+Range: 0 to 65,535
+
+Type: boolean
+Size (in bits): 1
+Range: true or false
+
+

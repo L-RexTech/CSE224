@@ -47,7 +47,14 @@ class Person
     val person=Person()
     person.displayInfo()
     }
+    Data types are divided into different groups:
 
+    Numbers
+    Characters
+    Booleans
+    Strings
+    Arrays
+    
 Type: byte
 Size (in bits): 8
 Range: -128 to 127

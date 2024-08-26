@@ -58,3 +58,47 @@ fun main()
     }
     println(result)
 }
+//forloop
+fun main()
+{
+    for(i in 1..5)
+    println(i)
+    //In Kotlin, the var keyword is not used when declaring the loop variable in a for loop because the loop variable is implicitly
+    //declared as a read-only variable within the loop. This is to enforce immutability and prevent accidental modification of the loop variable inside the loop.
+   //When using a for loop in Kotlin, the loop variable is automatically declared as a read-only variable that cannot be reassigned within the loop body. This helps in preventing unintended side effects and makes the code more predictable and easier to understand.
+}
+fun main() {
+    
+   
+    for (i in 1..10) { // iterating over a range
+    // body of the loop
+        print(" "+i+" ")
+}
+    println()
+
+for (i in 10 downTo 1) { // iterating in reverse
+    // body of the loop
+    print(" "+i+" ")
+}
+println()
+
+for (i in 1 until 10) { // excluding the upper bound
+    // body of the loop
+    print(" "+i+" ")
+}
+println()
+for (i in 0 until 10 step 2) { // iterating with a step
+    // body of the loop
+    print(" "+i+" ")
+}
+}
+/*
+ 1  2  3  4  5  6  7  8  9  10 
+ 10  9  8  7  6  5  4  3  2  1 
+ 1  2  3  4  5  6  7  8  9 
+ 0  2  4  6  8 
+*/
+
+while (condition) {
+    // body of the loop
+}

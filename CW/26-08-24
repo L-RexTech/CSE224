@@ -46,3 +46,15 @@ fun main()
 
 // when keyword is used as a replacement for the traditional switch statement found in other programming languages.
 //The when expression allows you to check a value against multiple conditions and execute different blocks of code based on those conditions.
+fun main()
+{
+ var choice=2
+    val result=when(choice){
+        1->"hello"
+        2->" hi"
+        3->"Namaste"
+        4->"Vanakkam"
+        else->"No need"//can use func in the else{like this}
+    }
+    println(result)
+}

@@ -1,0 +1,19 @@
+fun main() {
+    var x=5;
+    println("Leftshift of 5 by one="+x.shl(1))
+    println("Rightshift of 5 by one="+x.shr(1))
+    println("Rightshift of 5 by two="+x.shr(2))
+}
+
+/*
+1.The binary representation of 5 is 0101.
+Shifting left by 1 position gives 1010.
+1010 in binary is 10 in decimal.
+2.The binary representation of 5 is 0101.
+Shifting right by 1 position gives 0010.
+0010 in binary is 2 in decimal.
+3.Right shift operation: x.shr(2)
+x = 5 (binary: 0101)
+Shifting right by 2 positions: 0001 (binary)
+0001 in decimal is 1
+*/

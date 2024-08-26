@@ -1,0 +1,92 @@
+/ 1. Basic input and output with type conversion
+fun main() {
+    print("Enter an integer: ")
+    val userInput = readLine()
+    val number = userInput?.toIntOrNull() ?: 0
+    println("You entered: $number")
+}
+
+// 2. Multiple input types
+fun main() {
+    print("Enter your name: ")
+    val name = readLine() ?: ""
+    print("Enter your age: ")
+    val age = readLine()?.toIntOrNull() ?: 0
+    print("Enter your height in meters: ")
+    val height = readLine()?.toDoubleOrNull() ?: 0.0
+    println("Name: $name, Age: $age, Height: $height")
+}
+
+// 3. String to number conversions
+fun main() {
+    val str = "42"
+    val intValue = str.toInt()
+    val longValue = str.toLong()
+    val floatValue = str.toFloat()
+    val doubleValue = str.toDouble()
+    println("Int: $intValue, Long: $longValue, Float: $floatValue, Double: $doubleValue")
+}
+
+// 4. Number to string conversion
+fun main() {
+    val number = 3.14159
+    val formatted = "%.2f".format(number)
+    println("Formatted number: $formatted")
+}
+
+// 5. Character to integer and vice versa
+fun main() {
+    val char = 'A'
+    val asciiValue = char.toInt()
+    val backToChar = asciiValue.toChar()
+    println("ASCII value of $char is $asciiValue")
+    println("Character for ASCII $asciiValue is $backToChar")
+}
+
+// 6. Boolean conversion
+fun main() {
+    print("Enter true or false: ")
+    val userInput = readLine()
+    val boolValue = userInput?.toBoolean() ?: false
+    println("Boolean value: $boolValue")
+}
+
+// 7. List to array and vice versa
+fun main() {
+    val list = listOf(1, 2, 3, 4, 5)
+    val array = list.toIntArray()
+    val backToList = array.toList()
+    println("Array: ${array.joinToString()}")
+    println("List: $backToList")
+}
+
+// 8. String to list
+fun main() {
+    print("Enter comma-separated numbers: ")
+    val input = readLine() ?: ""
+    val numbers = input.split(",").mapNotNull { it.trim().toIntOrNull() }
+    println("List of numbers: $numbers")
+}
+
+// 9. Any to String
+fun main() {
+    val anyValue: Any = 42
+    val stringValue = anyValue.toString()
+    println("String value: $stringValue")
+}
+
+// 10. String to Date
+import java.text.SimpleDateFormat
+import java.util.*
+
+fun main() {
+    print("Enter a date (dd/MM/yyyy): ")
+    val dateString = readLine() ?: ""
+    val dateFormat = SimpleDateFormat("dd/MM/yyyy")
+    try {
+        val date = dateFormat.parse(dateString)
+        println("Parsed date: $date")
+    } catch (e: Exception) {
+        println("Invalid date format")
+    }
+}

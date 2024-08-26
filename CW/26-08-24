@@ -17,3 +17,32 @@ x = 5 (binary: 0101)
 Shifting right by 2 positions: 0001 (binary)
 0001 in decimal is 1
 */
+
+val a = 5
+val b = 3
+val result = a and b
+println(result)
+//In the bitwise AND example, the binary representation of 5 is 101 and the binary representation of 3 is 011. Performing a bitwise AND operation on these two numbers results in 001, which is equal to 1 in decimal.
+
+val x = 5
+val y = 10
+
+if (x > 0 && y < 15) {
+    println("Both conditions are true")
+} else {
+    println("At least one condition is false")
+}
+
+//elvis OPERATOR- the Elvis operator ?: can also be used in combination with a null string check to handle null or empty strings
+fun main()
+{
+  var str:String?=null
+    var str2: String?="May be declared as null"
+    var len1:Int=str?.length?:-1
+    var len2:Int=str2?.length?:-1
+    println("Length of string1 is ${len1}")
+     println("Length of string2 is ${len2}")
+}
+
+// when keyword is used as a replacement for the traditional switch statement found in other programming languages.
+//The when expression allows you to check a value against multiple conditions and execute different blocks of code based on those conditions.

@@ -1,1 +1,92 @@
+// 1. Basic data types
+fun main() {
+    val integerNumber: Int = 42
+    val floatingNumber: Float = 3.14f
+    val doubleNumber: Double = 2.71828
+    val character: Char = 'A'
+    val string: String = "Hello, Kotlin!"
+    val boolean: Boolean = true
+    println("$integerNumber $floatingNumber $doubleNumber $character $string $boolean")
+}
 
+// 2. Nullable types
+fun main() {
+    val nullableInt: Int? = null
+    val nonNullInt: Int = 10
+    println("Nullable: $nullableInt, Non-nullable: $nonNullInt")
+}
+
+// 3. Any, Unit, and Nothing types
+fun main() {
+    val anyType: Any = 42
+    println("Any type: $anyType")
+    printUnit()
+    // throwNothing() // Uncomment to see Nothing type in action
+}
+
+fun printUnit(): Unit {
+    println("This function returns Unit")
+}
+
+fun throwNothing(): Nothing {
+    throw Exception("This function returns Nothing")
+}
+
+// 4. Array
+fun main() {
+    val intArray = intArrayOf(1, 2, 3, 4, 5)
+    println("Array: ${intArray.joinToString()}")
+}
+
+// 5. List and MutableList
+fun main() {
+    val immutableList = listOf("apple", "banana", "cherry")
+    val mutableList = mutableListOf("dog", "cat", "bird")
+    mutableList.add("fish")
+    println("Immutable: $immutableList")
+    println("Mutable: $mutableList")
+}
+
+// 6. Set and MutableSet
+fun main() {
+    val immutableSet = setOf(1, 2, 3, 3, 4)
+    val mutableSet = mutableSetOf("red", "green", "blue")
+    mutableSet.add("yellow")
+    println("Immutable: $immutableSet")
+    println("Mutable: $mutableSet")
+}
+
+// 7. Map and MutableMap
+fun main() {
+    val immutableMap = mapOf("a" to 1, "b" to 2, "c" to 3)
+    val mutableMap = mutableMapOf("x" to 10, "y" to 20)
+    mutableMap["z"] = 30
+    println("Immutable: $immutableMap")
+    println("Mutable: $mutableMap")
+}
+
+// 8. Pair and Triple
+fun main() {
+    val pair = Pair("Hello", 42)
+    val triple = Triple("X", 'Y', 3.14)
+    println("Pair: $pair")
+    println("Triple: $triple")
+}
+
+// 9. Enum class
+enum class DaysOfWeek {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+fun main() {
+    val today = DaysOfWeek.WEDNESDAY
+    println("Today is $today")
+}
+
+// 10. Data class
+data class Person(val name: String, val age: Int)
+
+fun main() {
+    val person = Person("Alice", 30)
+    println(person)
+}

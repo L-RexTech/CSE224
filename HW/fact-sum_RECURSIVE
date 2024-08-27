@@ -10,8 +10,20 @@ fun fact(n:Int):Int
     return 1
     return n*fact(n-1)
 }
+fun sumE(n:Int):Int
+{
+    if(n==2)
+    return 2
+    if(n<2)
+    return 0
+    if(n%2==1)
+    return sumE(n-1)
+    return n+sumE(n-2)
+}
 fun main() {
    
     println(fact(5))
     println(sum(5))
+
+    println(sumE(13))
 }

@@ -1,12 +1,12 @@
 fun main() {
-    println("Enter the first number:")
-    val num1 = readLine()!!.toDouble()
+  
+    val num1 = 5.0
 
-    println("Enter the second number:")
-    val num2 = readLine()!!.toDouble()
+    
+    val num2 = 10.00
 
     println("Enter the operation (+, -, *, /, %):")
-    val operation = readLine()
+    val operation = "/"
 
     val result = when (operation) {
         "+" -> num1 + num2

@@ -1,0 +1,80 @@
+fun main() {
+    println("Kotlin Operators Demonstration")
+    println("==============================")
+
+    // Arithmetic Operators
+    println("Arithmetic Operators:")
+    val a = 10
+    val b = 3
+    println("a = $a, b = $b")
+    println("a + b = ${a + b}")  // Output: 13 (Addition)
+    println("a - b = ${a - b}")  // Output: 7 (Subtraction)
+    println("a * b = ${a * b}")  // Output: 30 (Multiplication)
+    println("a / b = ${a / b}")  // Output: 3 (Integer Division, rounds down)
+    println("a % b = ${a % b}")  // Output: 1 (Modulus, remainder of division)
+    println("a.toDouble() / b = ${a.toDouble() / b}")  // Output: 3.3333333333333335 (Float division)
+
+    // Unary Operators
+    println("\nUnary Operators:")
+    var c = 5
+    println("c = $c")
+    println("-c = ${-c}")  // Output: -5 (Unary minus, negates the value)
+    println("++c = ${++c}")  // Output: 6 (Prefix increment, increments then returns)
+    println("c++ = ${c++}")  // Output: 6 (Postfix increment, returns then increments)
+    println("c = $c")  // Output: 7 (c is now 7 after postfix increment)
+    println("--c = ${--c}")  // Output: 6 (Prefix decrement, decrements then returns)
+    println("c-- = ${c--}")  // Output: 6 (Postfix decrement, returns then decrements)
+    println("c = $c")  // Output: 5 (c is now 5 after postfix decrement)
+
+    // Comparison Operators
+    println("\nComparison Operators:")
+    println("a > b: ${a > b}")   // Output: true (10 is greater than 3)
+    println("a < b: ${a < b}")   // Output: false (10 is not less than 3)
+    println("a >= b: ${a >= b}") // Output: true (10 is greater than or equal to 3)
+    println("a <= b: ${a <= b}") // Output: false (10 is not less than or equal to 3)
+    println("a == b: ${a == b}") // Output: false (10 is not equal to 3)
+    println("a != b: ${a != b}") // Output: true (10 is not equal to 3)
+
+    // Logical Operators
+    println("\nLogical Operators:")
+    val x = true
+    val y = false
+    println("x = $x, y = $y")
+    println("x && y: ${x && y}")  // Output: false (true AND false)
+    println("x || y: ${x || y}")  // Output: true (true OR false)
+    println("!x: ${!x}")          // Output: false (NOT true)
+
+    // Bitwise Operators
+    println("\nBitwise Operators:")
+    val m = 60  // 60 = 0011 1100 in binary
+    val n = 13  // 13 = 0000 1101 in binary
+    println("m = $m, n = $n")
+    println("m and n: ${m and n}")  // Output: 12 (0000 1100 in binary)
+    println("m or n: ${m or n}")    // Output: 61 (0011 1101 in binary)
+    println("m xor n: ${m xor n}")  // Output: 49 (0011 0001 in binary)
+    println("m.inv(): ${m.inv()}")  // Output: -61 (1100 0011 in binary, two's complement)
+    println("m shl 2: ${m shl 2}")  // Output: 240 (1111 0000 in binary, shifted left by 2)
+    println("m shr 2: ${m shr 2}")  // Output: 15 (0000 1111 in binary, shifted right by 2)
+    println("m ushr 2: ${m ushr 2}")  // Output: 15 (same as shr for positive numbers)
+
+    // Assignment Operators
+    println("\nAssignment Operators:")
+    var d = 10
+    println("d = $d")
+    d += 5
+    println("d += 5: $d")  // Output: 15 (d = d + 5)
+    d -= 3
+    println("d -= 3: $d")  // Output: 12 (d = d - 3)
+    d *= 2
+    println("d *= 2: $d")  // Output: 24 (d = d * 2)
+    d /= 4
+    println("d /= 4: $d")  // Output: 6 (d = d / 4)
+    d %= 3
+    println("d %= 3: $d")  // Output: 0 (d = d % 3)
+
+    // Elvis Operator
+    println("\nElvis Operator:")
+    val nullableValue: String? = null
+    val result = nullableValue ?: "Default Value"
+    println("result = $result")  // Output: Default Value (returns right side if left is null)
+}

@@ -1,0 +1,46 @@
+fun sum():Int
+{
+    var a=5;
+    var b=10;
+    val c=a+b;//u cant declare the return variable as var as it should be a constant value
+            //u can but dont
+    return c
+}
+fun multi(num1:Int,num2:Int):Int
+{
+    val add=num1+num2
+    return add
+}
+var count=0
+fun rec()
+{
+    count++;
+    if(count<=5){
+    println("Hello"+count);
+    rec()
+    }
+}
+fun main() {
+    //functions perform a certain task and the block of code can be used again and again
+    println(sum())
+    println(multi(5,6))
+  rec()
+}
+class Car
+{
+    var make: String =""
+    var model: String=""
+    var year: Int=0
+	fun getInfo(): String{
+        return "$make $model "
+    }
+}
+fun main() {
+    val kotlin = "🙂"
+    println(kotlin)
+}
+H/W
+factorial
+sum of n numbers
+sum of even numbers for given range of 1 to n using recursion 
+create a class create two objects with different data values

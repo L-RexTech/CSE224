@@ -1,0 +1,34 @@
+
+class Person {
+    var name: String
+    var age: Int
+​
+    // Primary constructor
+    constructor(x: String, y: Int) {
+        this.name = x
+        this.age = y
+    }
+​
+    // Secondary constructor
+    constructor(x: String) : this(x, 0)
+​
+    // Secondary constructor with default values
+    constructor() : this("Prajjwal", 24)
+​
+    fun intro() {
+        println("My name is $name and age is $age")
+    }
+}
+​
+fun main() {
+    val a = Person("Tani", 22)
+    a.intro()  // Corrected this line to call the intro function
+    var b=Person()
+    b.intro()
+    var c=Person("LElla")
+    c.intro()    
+}
+​
+My name is Tani and age is 22
+My name is Prajjwal and age is 24
+My name is LElla and age is 0
